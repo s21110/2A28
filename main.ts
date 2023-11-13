@@ -100,7 +100,8 @@ basic.forever(function () {
             `)
     }
     if (_2 == 3) {
-        music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Birthday), music.PlaybackMode.InBackground)
+        music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Birthday), music.PlaybackMode.UntilDone)
+        music.stopAllSounds()
     }
     if (_2 > 3) {
         _2 = 1
